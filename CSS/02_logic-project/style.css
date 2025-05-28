@@ -1,0 +1,56 @@
+body {
+    color: white;
+    background-color: #1a1a1a;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card {
+    border-radius: 8px;
+    box-shadow:  white 0px 0px 10px;
+    padding: 20px;
+    width: 250px;
+}
+.card h2 {
+    color: #1a50a1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    margin-bottom:15px;;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+form button {
+    padding: 10px 30px 10px 30px;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+input[type="email"]::placeholder {
+    text-align: center;
+}
+input[type="password"]::placeholder {
+    text-align: center;
+}

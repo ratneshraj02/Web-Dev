@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    box-sizing: border-box;
+}
+.nav-container {
+    margin-bottom: 40px;
+}
+h2 {
+    margin-bottom: 40px;
+}
+.nav1 {
+    background-color: #d2c7c7;
+    padding: 10px;
+}
+.nav1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav1 li {
+    display: inline;
+}
+.nav1 a {
+    text-decoration: none;
+    color: #0c0c0c;
+    position:relative;
+}
+
+.nav1 a::after {
+    content:"";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(48, 33, 165,1);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.nav1 a:hover::after {
+    text-align: center;
+    transform: scaleX(1); 
+}
+.nav1 .login-btn {
+    border: none;
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+    background-color: #5b56eb;
+    color: #fff;
+    cursor:pointer;
+}
+.nav1 .login-btn:hover {
+    color:#0c0c0c;
+    background-color: #5159ec;
+}
+
+/* nav-containe nav2 */
+
+.nav2 {
+    background-color: #343a40;
+    width: 200px;
+    padding: 20px;
+}
+.nav2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav2 li {
+    margin-bottom: 15px;
+}
+.nav2 a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav2 a:hover {
+    background-color: #2dc000;
+}
+.nav2 .login-btn {
+    background-color: #025208;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+.nav2 .login-btn:hover {
+    color: black;
+    background-color: #76fb45;
+    cursor: pointer;
+}
+
+/* nav-container nav3 */
+
+.nav3 {
+    background-color: #122f13;
+    padding: 10px;
+}
+.nav3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav3 a {
+    text-decoration: none;
+    color:#FFF;
+    display:block;
+}
+
+.nav3 .dropdown-content {
+    display: none;
+    background-color: rgb(108, 108, 108);
+    color: #000;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.nav3 .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+
+}
+
+.dropdown-content a:hover {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.nav3 .login-btn {
+    color: black;
+    background-color: #2b9f04;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 10px 3px 10px;
+}
+.nav3 .login-btn:hover {
+    background-color: #76fb45;
+    color: #000;
+    box-shadow: 0px 0px 5px #000;
+}
