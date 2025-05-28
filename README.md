@@ -1,2 +1,2 @@
-# Web-Dev
+# WEB-DEV
 WEB DEV COURSE
